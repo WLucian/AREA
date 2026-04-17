@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-white">
+    <header class="fixed top-0 w-full z-50 px-4 py-3 container mx-auto">
+      <nav
+        id="desktopNav"
+        class="hidden md:flex items-center justify-between font-dm px-8 py-4 relative rounded-2xl border border-white/10 transition-all duration-300">
+        <div
+          class="absolute inset-0 rounded-2xl pointer-events-none bg-gradient-to-br from-white/20 via-white/5 to-transparent"></div>
+
+        <div class="relative flex w-full items-center justify-between">
+          <h1 class="font-medium text-[30px]">Area</h1>
+
+          <div class="text-[14px] font-bold tracking-tight space-x-4">
+            <a class="cursor-pointer">Benefits</a>
+            <a class="cursor-pointer">Specifications</a>
+            <a class="cursor-pointer">How-to</a>
+            <a class="cursor-pointer">Contact Us</a>
+          </div>
+
+          <button
+            class="bg-[#485C11] text-white font-bold text-[14px] w-[127px] h-[48px] flex items-center justify-center rounded-full">
+            Learn More ↗
+          </button>
+        </div>
+      </nav>
+
+      <nav
+        id="mobileNav"
+        class="flex md:hidden items-center justify-between font-dm px-6 py-4 relative rounded-2xl border border-white/10 transition-all duration-300">
+        <!-- glass shine -->
+        <div
+          class="absolute inset-0 rounded-2xl pointer-events-none bg-gradient-to-br from-white/20 via-white/5 to-transparent"></div>
+
+        <div class="relative flex w-full items-center justify-between">
+          <p class="font-medium text-[24px]">Area</p>
+          <button class="text-2xl">&#9776;</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mt-25 px-8 py-4 container mx-auto">
+      <section>
+        <h1
+          class="lg:text-[160px] md:text-[140px] text-[76px] text-center md:leading-[80%] leading-[85%] tracking-tight">
+          Browse everything.
+        </h1>
+
+        <div
+          class="w-full md:h-94 h-90 bg-[#8E9C78] rounded-4xl flex justify-center relative lg:mt-64 md:mt-40 mt-20">
+          <img
+            src="../assets/Ipad.png"
+            alt=""
+            class="hidden md:flex absolute lg:-bottom-[36.5%] md:-bottom-[13.5%] md:[clip-path:inset(0_0_10%_0)] lg:[clip-path:inset(0_0_20%_0)]" />
+
+          <img
+            src="../assets/iPhone.png"
+            alt=""
+            class="flex md:hidden w-[270px] h-[541.82px] absolute -bottom-[37.5%] [clip-path:inset(0_0_25%_0)]" />
+        </div>
+      </section>
+
+      <!-- trusted by -->
+      <div class="mt-10">
+        <p class="text-[#6F6F6F] font-dm text-[15px] tracking-none mb-8 md:mb-12">Trusted by:</p>
+        <div class="hidden lg:flex w-full items-center justify-between">
+          <img src="../assets/Logo.png" alt="" />
+          <img src="../assets/Logo-1.png" alt="" />
+          <img src="../assets/Logo-2.png" alt="" />
+          <img src="../assets/Logo-3.png" alt="" />
+          <img src="../assets/Logo-4.png" alt="" />
+          <img src="../assets/Logo-5.png" alt="" />
+        </div>
+        <div class="hidden md:flex md:flex-col lg:hidden w-full items-center space-y-12">
+          <div class="flex items-center w-full justify-between">
+            <img src="../assets/Logo.png" alt="" />
+            <img src="../assets/Logo-1.png" alt="" />
+            <img src="../assets/Logo-2.png" alt="" />
+            <img src="../assets/Logo-3.png" alt="" />
+          </div>
+          <div class="flex items-center space-x-20">
+            <img src="../assets/Logo-4.png" alt="" />
+            <img src="../assets/Logo-5.png" alt="" />
+          </div>
+        </div>
+        <div class="relative md:hidden overflow-hidden w-screen -mx-4">
+          <div class="flex whitespace-nowrap space-x-8 min-w-max animate-scroll">
+            <div class="flex space-x-8 items-center">
+              <img src="../assets/Logo.png" alt="" />
+              <img src="../assets/Logo-1.png" alt="" class="w-20 h-auto" />
+              <img src="../assets/Logo-2.png" alt="" class="w-20 h-auto" />
+              <img src="../assets/Logo-3.png" alt="" class="w-20 h-auto" />
+              <img src="../assets/Logo-4.png" alt="" class="w-20 h-auto" />
+              <img src="../assets/Logo-5.png" alt="" class="w-20 h-auto" />
+            </div>
+            <div class="flex space-x-8 items-center">
+              <img src="../assets/Logo.png" alt="" class="w-20 h-auto" />
+              <img src="../assets/Logo-1.png" alt="" class="w-20 h-auto" />
+              <img src="../assets/Logo-2.png" alt="" class="w-20 h-auto" />
+              <img src="../assets/Logo-3.png" alt="" class="w-20 h-auto" />
+              <img src="../assets/Logo-4.png" alt="" class="w-20 h-auto" />
+              <img src="../assets/Logo-5.png" alt="" class="w-20 h-auto" />
+            </div>
+            <div
+              class="pointer-events-none absolute top-0 left-0 w-12 h-full bg-gradient-to-r from-white to-transparent"></div>
+
+            <div
+              class="pointer-events-none absolute top-0 right-0 w-12 h-full bg-gradient-to-l from-white to-transparent"></div>
+          </div>
+        </div>
+      </div>
+
+      <div></div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
