@@ -6,10 +6,10 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body class="bg-white">
-    <header class="fixed top-0 w-full z-50 px-4 py-3 container mx-auto">
+    <header class="fixed top-0 w-full items-center z-50 px-4 py-3">
       <nav
         id="desktopNav"
-        class="hidden md:flex items-center justify-between font-dm px-8 py-4 relative rounded-2xl border border-white/10 transition-all duration-300">
+        class="hidden md:flex items-center justify-between font-dm px-8 py-4 relative w-full rounded-2xl border border-white/10 transition-all duration-300 container mx-auto">
         <div
           class="absolute inset-0 rounded-2xl pointer-events-none bg-gradient-to-br from-white/20 via-white/5 to-transparent"></div>
 
@@ -68,7 +68,9 @@
       <!-- trusted by -->
       <div class="mt-10">
         <p class="text-[#6F6F6F] font-dm text-[15px] tracking-none mb-8 md:mb-12">Trusted by:</p>
-        <div class="hidden lg:flex w-full items-center justify-between">
+
+        <!-- deskop -->
+        <div class="hidden lg:flex w-full px-5 items-center justify-between">
           <img src="../assets/Logo.png" alt="" />
           <img src="../assets/Logo-1.png" alt="" />
           <img src="../assets/Logo-2.png" alt="" />
@@ -76,6 +78,8 @@
           <img src="../assets/Logo-4.png" alt="" />
           <img src="../assets/Logo-5.png" alt="" />
         </div>
+
+        <!-- tablet -->
         <div class="hidden md:flex md:flex-col lg:hidden w-full items-center space-y-12">
           <div class="flex items-center w-full justify-between">
             <img src="../assets/Logo.png" alt="" />
@@ -88,6 +92,8 @@
             <img src="../assets/Logo-5.png" alt="" />
           </div>
         </div>
+
+        <!-- mobile -->
         <div class="relative md:hidden overflow-hidden w-screen -mx-4">
           <div class="flex whitespace-nowrap space-x-8 min-w-max animate-scroll">
             <div class="flex space-x-8 items-center">
@@ -115,7 +121,54 @@
         </div>
       </div>
 
-      <div></div>
+      <div class="border-t-1 border-[#E9E9E9] mt-16">
+        <div class="mt-18 h-[192px] flex flex-col flex flex-col justify-between">
+          <p class="font-roboto text-[12px] text-[#6f6f6f]">Benefits</p>
+          <h2 class="md:text-[60px] text-[50px] leading-none">We've cracked the code.</h2>
+          <p class="font-dm text-[15px] text-[#6f6f6f]">
+            Area provides real insights without the data overload
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-18 flex flex-wrap justify-between items-center w-full">
+        <div
+          class="flex flex-col border-t-1 border-[#E9E9E9] h-[250px] md:w-[285px] w-full justify-evenly">
+          <img src="../assets/amplify.png" alt="" class="w-[24px] h-auto" />
+          <p class="text-[18px]">Amplify Insights</p>
+          <p class="w-[265px] text-[15px] tracking-wider leading-[140%] font-dm text-[#6f6f6f]">
+            Unlock data-driven decisions with comprehensive analytics, revealing key opportunities
+            for strategic regional growth.
+          </p>
+        </div>
+        <div
+          class="flex flex-col border-t-1 border-[#E9E9E9] h-[250px] md:w-[285px] w-full justify-evenly">
+          <img src="../assets/control-globe.png" alt="" class="w-[24px] h-auto" />
+          <p class="text-[18px]">Control Your Global Presence</p>
+          <p class="w-[265px] text-[15px] tracking-wider leading-[140%] font-dm text-[#6f6f6f]">
+            Manage and track satellite offices, ensuring consistent performance and streamlined
+            operations everywhere.
+          </p>
+        </div>
+        <div
+          class="flex flex-col border-t-1 border-[#E9E9E9] h-[250px] md:w-[285px] w-full justify-evenly">
+          <img src="../assets/remove-language-barrier.png" alt="" class="w-[24px] h-auto" />
+          <p class="text-[18px]">Remove Language Barriers</p>
+          <p class="w-[265px] text-[15px] tracking-wider leading-[140%] font-dm text-[#6f6f6f]">
+            Adapt to diverse markets with built-in localization for clear communication and enhanced
+            user experience.
+          </p>
+        </div>
+        <div
+          class="flex flex-col border-t-1 border-[#E9E9E9] h-[250px] md:w-[285px] w-full justify-evenly">
+          <img src="../assets/visual-growth.png" alt="" class="w-[24px] h-auto" />
+          <p class="text-[18px]">Vizualize Growth</p>
+          <p class="w-[265px] text-[15px] tracking-wider leading-[140%] font-dm text-[#6f6f6f]">
+            Generate precise, visually compelling reports that illustrate your growth trajectories
+            across all regions.
+          </p>
+        </div>
+      </div>
     </main>
 
     <script src="./script.js"></script>
