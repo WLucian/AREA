@@ -39,12 +39,39 @@
 
         <div class="relative flex w-full items-center justify-between">
           <p class="font-medium text-[24px]">Area</p>
-          <button class="text-2xl">&#9776;</button>
+          <button onclick="toggleMenu()" class="text-2xl w-[24px] h-[24px]">&#9776;</button>
         </div>
+      </nav>
+
+      <nav
+        id="mobileMenu"
+        class="translate-x-full transform transition-all duration-200 ease-in-out font-dm flex flex-col gap-15 fixed h-screen inset-0 z-100 w-full bg-white p-6">
+        <div class="flex w-full justify-between">
+          <p class="font-medium text-[24px]">Area</p>
+          <button onclick="removeMenu()" class="text-2xl w-[24px] h-[24px]">&#10005;</button>
+        </div>
+        <div>
+          <div class="border-t-1 border-[#E9E9E9] py-10">
+            <p class="font-bold text-[20px]">Benefits</p>
+          </div>
+          <div class="border-t-1 border-[#E9E9E9] py-10">
+            <p class="font-bold text-[20px]">Specifications</p>
+          </div>
+          <div class="border-t-1 border-[#E9E9E9] py-10">
+            <p class="font-bold text-[20px]">How-to</p>
+          </div>
+          <div class="border-t-1 border-[#E9E9E9] py-10">
+            <p class="font-bold text-[20px]">Contact Us</p>
+          </div>
+        </div>
+        <button
+          class="bg-[#485C11] text-white font-bold text-[14px] w-[127px] h-[48px] flex items-center justify-center rounded-full">
+          Learn More ↗
+        </button>
       </nav>
     </header>
 
-    <main class="mt-25 px-8 py-4 container mx-auto">
+    <main class="mt-30 px-8 py-4 container mx-auto">
       <section>
         <h1
           class="lg:text-[160px] md:text-[140px] text-[76px] text-center md:leading-[80%] leading-[85%] tracking-tight">
@@ -52,11 +79,11 @@
         </h1>
 
         <div
-          class="w-full md:h-94 h-90 bg-[#8E9C78] rounded-4xl flex justify-center relative lg:mt-64 md:mt-40 mt-20">
+          class="w-full md:h-94 h-90 bg-[#8E9C78] rounded-3xl flex justify-center relative lg:mt-64 md:mt-40 mt-20">
           <img
             src="../assets/Ipad.png"
             alt=""
-            class="hidden md:flex absolute lg:-bottom-[36.5%] md:-bottom-[13.5%] md:[clip-path:inset(0_0_10%_0)] lg:[clip-path:inset(0_0_20%_0)]" />
+            class="hidden md:flex absolute lg:-bottom-[36.5%] md:-bottom-[13.3%] md:[clip-path:inset(0_0_10%_0)] lg:[clip-path:inset(0_0_20%_0)]" />
 
           <img
             src="../assets/iPhone.png"
@@ -168,6 +195,57 @@
             across all regions.
           </p>
         </div>
+      </div>
+      <div class="mt-10">
+        <img src="../assets/cracked-the-code-desktop.png" alt="" class="w-full hidden lg:flex" />
+        <img
+          src="../assets/cracked-the-code-tablet.png"
+          alt=""
+          class="w-full hidden md:flex lg:hidden" />
+        <img src="../assets/cracked-the-code-mobile.png" alt="" class="w-full flex md:hidden" />
+      </div>
+
+      <div class="flex flex-col lg:flex-row justify-between w-full mt-20 gap-10">
+        <div class="border-t-1 border-[#E9E9E9] w-full py-10 flex flex-col space-y-6">
+          <p class="text-[60px] leading-none">See the Big Picture</p>
+          <p class="font-dm text-[15px] text-[#6f6f6f] w-full tracking-[-0.5%]">
+            Area turns your data into clear, vibrant visuals that show you exactly what's happening
+            in each region.
+          </p>
+          <div>
+            <div class="border-t-1 border-[#E9E9E9] font-dm flex space-x-6 py-5">
+              <p class="font-bold text-[#6f6f6f] text-[15px]">01</p>
+              <p class="flex-wrap text-[15px] tracking-[-0.5%] lg:max-w-110">
+                Spot Trends in Seconds: No more digging through numbers.
+              </p>
+            </div>
+            <div class="border-t-1 border-[#E9E9E9] font-dm flex space-x-6 py-5">
+              <p class="font-bold text-[#6f6f6f] text-[15px]">02</p>
+              <p class="flex-wrap text-[15px] tracking-[-0.5%] lg:max-w-110">
+                Get Everyone on the Same Page: Share easy-to-understand reports with your team.
+              </p>
+            </div>
+            <div class="border-t-1 border-[#E9E9E9] font-dm flex space-x-6 py-5">
+              <p class="font-bold text-[#6f6f6f] text-[15px]">03</p>
+              <p class="flex-wrap text-[15px] tracking-[-0.5%] lg:max-w-110">
+                Make Presentations Pop: Interactive maps and dashboards keep your audience engaged.
+              </p>
+            </div>
+            <div class="border-t-1 border-[#E9E9E9] font-dm flex space-x-6 py-5">
+              <p class="font-bold text-[#6f6f6f] text-[15px]">04</p>
+              <p class="flex-wrap text-[15px] tracking-[-0.5%] lg:max-w-110">
+                Your Global Snapshot: Get a quick, clear overview of your entire operation.
+              </p>
+            </div>
+          </div>
+          <button
+            class="bg-[#485C11] text-white font-bold text-[14px] w-[127px] h-[48px] flex items-center justify-center rounded-full">
+            Discover More
+          </button>
+        </div>
+        <img src="../assets/the-big-picture-desktop.png" alt="" class="hidden lg:flex" />
+        <img src="../assets/the-big-picture-tablet.png" alt="" class="hidden md:flex lg:hidden" />
+        <img src="../assets/the-big-picture-mobile.png" alt="" class="flex md:hidden" />
       </div>
     </main>
 

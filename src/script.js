@@ -1,5 +1,6 @@
 const desktopNav = document.getElementById("desktopNav");
 const mobileNav = document.getElementById("mobileNav");
+const mobileMenu = document.getElementById("mobileMenu");
 
 window.addEventListener("scroll", () => {
   const scrolled = window.scrollY > 20;
@@ -22,3 +23,13 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+function toggleMenu() {
+  mobileMenu.classList.remove("translate-x-full");
+  mobileMenu.classList.add("translate-x-0");
+}
+
+function removeMenu() {
+  mobileMenu.classList.add("translate-x-full");
+  mobileMenu.classList.remove("translate-x-0");
+}
