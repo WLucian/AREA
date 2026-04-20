@@ -27,11 +27,13 @@ window.addEventListener("scroll", () => {
 function toggleMenu() {
   mobileMenu.classList.remove("translate-x-full");
   mobileMenu.classList.add("translate-x-0");
-  document.body.classList.add("overflow-hidden");
+  document.body.style.position = "fixed";
+  document.body.style.width = "100%";
 }
 
 function removeMenu() {
   mobileMenu.classList.add("translate-x-full");
   mobileMenu.classList.remove("translate-x-0");
-  document.body.classList.remove("overflow-hidden");
+  document.body.style.position = "";
+  document.body.style.width = "";
 }
