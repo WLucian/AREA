@@ -27,9 +27,11 @@ window.addEventListener("scroll", () => {
 function toggleMenu() {
   mobileMenu.classList.remove("translate-x-full");
   mobileMenu.classList.add("translate-x-0");
+  document.body.classList.add("overflow-hidden");
 }
 
 function removeMenu() {
   mobileMenu.classList.add("translate-x-full");
   mobileMenu.classList.remove("translate-x-0");
+  document.body.classList.remove("overflow-hidden");
 }
