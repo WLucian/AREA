@@ -37,3 +37,23 @@ function removeMenu() {
   document.body.style.position = "";
   document.body.style.width = "";
 }
+
+// Scroll fade-in animation
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.1 },
+);
+
+document
+  .querySelectorAll("main h1, main h2, main p, main img, main button, main td, main th")
+  .forEach((el) => {
+    el.classList.add("animate-on-scroll");
+    observer.observe(el);
+  });
