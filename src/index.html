@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="bg-white">
+  <body class="bg-white overflow-x-hidden">
     <header class="fixed top-0 w-full items-center z-50 px-4 py-3">
       <nav
         id="desktopNav"
@@ -121,7 +121,12 @@
         </div>
 
         <!-- mobile -->
-        <div class="relative md:hidden overflow-hidden w-screen -mx-4">
+        <div class="relative md:hidden overflow-hidden w-screen -mx-8">
+          <div
+            class="pointer-events-none absolute top-0 left-0 w-12 h-full z-10 bg-gradient-to-r from-white to-transparent"></div>
+          <div
+            class="pointer-events-none absolute top-0 right-0 w-12 h-full z-10 bg-gradient-to-l from-white to-transparent"></div>
+
           <div class="flex whitespace-nowrap space-x-8 min-w-max animate-scroll">
             <div class="flex space-x-8 items-center">
               <img src="./assets/Logo.png" alt="" />
@@ -139,11 +144,6 @@
               <img src="./assets/Logo-4.png" alt="" class="w-20 h-auto" />
               <img src="./assets/Logo-5.png" alt="" class="w-20 h-auto" />
             </div>
-            <div
-              class="pointer-events-none absolute top-0 left-0 w-12 h-full bg-gradient-to-r from-white to-transparent"></div>
-
-            <div
-              class="pointer-events-none absolute top-0 right-0 w-12 h-full bg-gradient-to-l from-white to-transparent"></div>
           </div>
         </div>
       </div>
